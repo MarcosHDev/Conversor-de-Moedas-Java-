@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class ConversorMoedas {
+    public static void main(String[] args)
+
+{
+    Scanner scanner = new Scanner(System.in);
+
+        // Taxas de conversão (exemplo)
+        double taxaDolarParaReal = 5.10;
+        double taxaEuroParaReal = 5.50;
+        double taxaRealParaDolar = 0.20;
+        double taxaRealParaEuro = 0.18;
+
+        System.out.println("Bem-vindo ao Conversor de Moedas!");
+        System.out.println("Escolha a conversão:");
+        System.out.println("1. Dólar para Real");
+        System.out.println("2. Euro para Real");
+        System.out.println("3. Real para Dólar");
+        System.out.println("4. Real para Euro");
+        System.out.print("Opção: ");
+        int opcao = scanner.nextInt();
+
+        System.out.print("Digite o valor: ");
+        double valor = scanner.nextDouble();
+
+        double resultado = 0;
+
+        switch (opcao) {
+            case 1 -> resultado = valor * taxaDolarParaReal;
+            case 2 -> resultado = valor * taxaEuroParaReal;
+            case 3 -> resultado = valor * taxaRealParaDolar;
+            case 4 -> resultado = valor * taxaReal
