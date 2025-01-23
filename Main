@@ -31,3 +31,5 @@ public class ConversorMoedas {
             case 2 -> resultado = valor * taxaEuroParaReal;
             case 3 -> resultado = valor * taxaRealParaDolar;
             case 4 -> resultado = valor * taxaReal
+
+}
